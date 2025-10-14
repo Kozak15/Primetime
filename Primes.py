@@ -36,4 +36,17 @@ def countprime(n , r):
         if isprime(i) == True and i % 4 == r:
             count += 1
     return count
+
 #countprime(n,1) > countprime(n,3) first at n = 26861
+
+#100 Bottles of beer
+for i in range(100,-1,-1):
+    if i == 0:
+        print("Damn, we're out of beer!")
+        print('Remember kids, alcohol is bad')
+    else:
+        print(f"{n} bottles of beer on the wall.")
+        print(f"{n} bottles of beer.")
+        print("Take one down, pass it around,")
+        print(f"{n-1} bottles of beer on the wall\n")
+
