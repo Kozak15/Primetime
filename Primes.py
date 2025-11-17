@@ -39,6 +39,17 @@ def countprime(n , r):
 
 #countprime(n,1) > countprime(n,3) first at n = 26861
 
+#Function that returns prime factorisation of n as a string
+def prime_factors(n):
+    s,i = '',2
+    while n > 1:
+        if n % i == 0:
+            n //= i
+            s += str(i) + ' '
+        else:
+            i += 1
+    return s
+
 #100 Bottles of beer
 for i in range(100,-1,-1):
     if i == 0:
@@ -49,4 +60,5 @@ for i in range(100,-1,-1):
         print(f"{n} bottles of beer.")
         print("Take one down, pass it around,")
         print(f"{n-1} bottles of beer on the wall\n")
+
 
